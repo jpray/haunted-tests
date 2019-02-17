@@ -54,6 +54,8 @@ function NestedChildrenTest(el) {
 
   return html`
     
+    <h1>Scroll to bottom and update a field to see the time it takes to render</h1>
+
     🎃RAF: ${window.rafNum}
 
     <h3>${first} ${last}</h3> 
