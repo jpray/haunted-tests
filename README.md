@@ -1,10 +1,6 @@
 # haunted-tests
 
-## Available Tests
-
-[DBMonster Test](https://jpray.github.io/haunted-tests/dist/db-monster-test.html)
-
-[Nested Children Test](https://jpray.github.io/haunted-tests/dist/nested-children-test.html)
+## [➡ Go to Tests ➡](https://jpray.github.io/haunted-tests)
 
 
 This project shows some tests and patterns on how to implement an app with web components and the hooks pattern (from React) using the following libraries:
