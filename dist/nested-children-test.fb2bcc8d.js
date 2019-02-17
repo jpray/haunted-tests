@@ -2617,15 +2617,13 @@ function NestedChildrenTest(el) {
       dispatch = _a[1];
 
   var onInput = function onInput(ev) {
-    var target = ev.path[0]; //smell
-
     dispatch({
-      type: target.name,
-      data: target.value
+      type: ev.target.name,
+      data: ev.target.value
     });
   };
 
-  return haunted_1.html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    \n    \uD83C\uDF83RAF: ", "\n\n    <h3>", " ", "</h3> \n\n    <recursive-child\n      id=\"recursive-child-0\"\n      @input=\"", "\"\n      depth=\"0\"\n      first=\"", "\"\n      last=\"", "\"\n    >\n    </recursive-child>\n  "], ["\n    \n    \uD83C\uDF83RAF: ", "\n\n    <h3>", " ", "</h3> \n\n    <recursive-child\n      id=\"recursive-child-0\"\n      @input=\"", "\"\n      depth=\"0\"\n      first=\"", "\"\n      last=\"", "\"\n    >\n    </recursive-child>\n  "])), window.rafNum, first, last, onInput, first, last);
+  return haunted_1.html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    \n    <h1>Scroll to bottom and update a field to see the time it takes to render</h1>\n\n    \uD83C\uDF83RAF: ", "\n\n    <h3>", " ", "</h3> \n\n    <recursive-child\n      id=\"recursive-child-0\"\n      @input=\"", "\"\n      depth=\"0\"\n      first=\"", "\"\n      last=\"", "\"\n    >\n    </recursive-child>\n  "], ["\n    \n    <h1>Scroll to bottom and update a field to see the time it takes to render</h1>\n\n    \uD83C\uDF83RAF: ", "\n\n    <h3>", " ", "</h3> \n\n    <recursive-child\n      id=\"recursive-child-0\"\n      @input=\"", "\"\n      depth=\"0\"\n      first=\"", "\"\n      last=\"", "\"\n    >\n    </recursive-child>\n  "])), window.rafNum, first, last, onInput, first, last);
 }
 
 customElements.define("nested-children-test", haunted_1.component(NestedChildrenTest, HTMLElement, {

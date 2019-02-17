@@ -45,10 +45,9 @@ function NestedChildrenTest(el) {
   });
 
   const onInput = ev => {
-    const target = ev.path[0]; //smell
     dispatch({
-      type: target.name,
-      data: target.value
+      type: ev.target.name,
+      data: ev.target.value
     });
   };
 
