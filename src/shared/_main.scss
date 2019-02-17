@@ -1,0 +1,22 @@
+$font-family-base: Helvetica, Arial, sans-serif;
+
+:root {
+  box-sizing: border-box;
+  font-family: $font-family-base;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $font-family-base;
+  color: #444;
+  height: 100%;
+}

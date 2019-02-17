@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+          "haunted": ["lib/haunted-builds/index.js"],
+          "haunted-w-microtask": ["lib/haunted-builds/index-w-microtask.js"]
+        },
+        "moduleResolution": "node",
+        "lib": ["dom", "es2017.object", "es7"]
+    }
+}
