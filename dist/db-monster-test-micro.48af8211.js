@@ -1803,6 +1803,8 @@ function notify() {
   return id;
 }
 
+var defer = typeof Promise == 'function' ? Promise.resolve().then.bind(Promise.resolve()) : setTimeout;
+
 function scheduler() {
   var tasks = [];
   var id;
@@ -1821,7 +1823,7 @@ function scheduler() {
     tasks.push(task);
 
     if (id == null) {
-      id = Promise.resolve().then(runTasks);
+      id = defer(runTasks);
     }
   };
 }
