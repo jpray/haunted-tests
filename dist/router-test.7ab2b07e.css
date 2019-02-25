@@ -1,0 +1,15 @@
+router-test {
+  display: block;
+}
+router-test main {
+  border: 1px solid blue;
+  padding: 12px;
+}
+
+child-one {
+  display: block;
+}
+
+child-two {
+  display: block;
+}
