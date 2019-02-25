@@ -5519,7 +5519,8 @@ function useRouter(options) {
         route = options.baseRoute + options.defaultRoute;
         triggerUpdate(); //router.navigate(route, {}, {replace:true});
 
-        window.location.hash = route;
+        var href = window.location.href.replace(window.location.hash, route);
+        window.history.replaceState({}, document.title, href);
       }
     }; //subscribe to future changes
 

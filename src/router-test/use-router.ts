@@ -54,7 +54,8 @@ export function useRouter(options): any {
         route = options.baseRoute + options.defaultRoute;        
         triggerUpdate();
         //router.navigate(route, {}, {replace:true});
-        window.location.hash = route;
+        const href = window.location.href.replace(window.location.hash,route)
+        window.history.replaceState({}, document.title, href);
       }
     }
 
